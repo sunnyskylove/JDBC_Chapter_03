@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-    <entry key="insertMenu">
+    <entry key="insertMenu">         <!-- 생성 1 -->
         INSERT INTO TBL_MENU
         (MENU_NAME,MENU_PRICE,CATEGORY_CODE,ORDERABLE_STATUS)
         VALUES
         (?, ?, ?, ?)
     </entry>
-    <entry key="updateMenu">
+    <entry key="updateMenu">        <!-- 생성 2 -->
         UPDATE TBL_MENU
         SET
             MENU_NAME = ?
-           ,MENU_PRICE = ?          <!-- NAME과 PRICE 수정할것임! -->
+           ,MENU_PRICE = ?          <!-- NAME,PRICE 수정할것임! -->
 
         WHERE
             MENU_CODE = ?           <!-- 이것도 아직 안정해져서 정할 것임~! -->

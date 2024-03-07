@@ -40,8 +40,9 @@ public class template {
         return con;
     }
 
+    ////////////////// 얘 close 닫아주는건데 왜/어떻게 만들었는지 확실하게 재공부!!! ↓ //////////////////
 
-    public static void close(Statement stmt) {
+    public static void close(Statement stmt) {                  // 1. Statement stmt
 
         try {
             if (stmt != null && !stmt.isClosed()) {
@@ -57,7 +58,7 @@ public class template {
 
     }
 
-    public static void close(ResultSet rset) {
+    public static void close(ResultSet rset) {              // 2. ResultSet rset
 
         try {
             if (rset != null && !rset.isClosed()) {
@@ -73,7 +74,7 @@ public class template {
 
     }
 
-    public static void close(Connection con) {
+    public static void close(Connection con) {          // 3. Connection con
 
         try {
             if (con != null && !con.isClosed()) {
