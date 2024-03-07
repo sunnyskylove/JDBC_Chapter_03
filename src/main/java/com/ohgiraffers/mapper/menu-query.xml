@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="insertMenu">
+        INSERT INTO TBL_MENU
+        (MENU_NAME,MENU_PRICE,CATEGORY_CODE,ORDERABLE_STATUS)
+        VALUES
+        (?, ?, ?, ?)
+    </entry>
+    <entry key="updateMenu">
+        UPDATE TBL_MENU
+        SET
+            MENU_NAME = ?
+           ,MENU_PRICE = ?          <!-- NAME과 PRICE 수정할것임! -->
+
+        WHERE
+            MENU_CODE = ?           <!-- 이것도 아직 안정해져서 정할 것임~! -->
+    </entry>
+</properties>
+
+<!-- 여기서는 app 에서 사용할 key 값들 만들어준다.  -->
